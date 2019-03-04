@@ -82,4 +82,14 @@ headingFour[4].textContent = siteContent["main-content"]["vision-h4"];
 paragraphTags[4].textContent = siteContent["main-content"]["vision-content"];
 
 
+//code for contact section.
+headingFour[5].textContent = siteContent.contact["contact-h4"];
+paragraphTags[5].textContent = siteContent.contact.address;
+paragraphTags[6].textContent = siteContent.contact.phone;
+paragraphTags[7].textContent = siteContent.contact.email;
+
+
+//code for footer.
+paragraphTags[8].textContent = siteContent.footer.copyright;
+
 console.log(paragraphTags);

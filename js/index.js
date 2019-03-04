@@ -105,3 +105,22 @@ paragraphTags[7].textContent = siteContent.contact.email;
 
 //code for footer.
 paragraphTags[8].textContent = siteContent.footer.copyright;
+
+
+//STRETCH PROBLEMS
+//code for 1st stretch problem
+const container = document.querySelector('.container');
+container.style.padding = "10px ";
+container.style.backgroundColor = 'lightgray';
+
+const header = document.querySelector('header');
+header.style.borderBottom = '2px solid black';
+
+getStartedBtn.style.backgroundColor = 'silver';
+getStartedBtn.style.borderRadius = '5px';
+
+middleImg.style.width = '100%';
+
+const footer = document.querySelector('footer');
+footer.style.borderTop = '2px solid black';
+footer.style.paddingTop = '10px';

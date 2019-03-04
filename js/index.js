@@ -108,7 +108,7 @@ paragraphTags[8].textContent = siteContent.footer.copyright;
 
 
 //STRETCH PROBLEMS
-//code for 1st stretch problem
+//code for 1st stretch goal
 const container = document.querySelector('.container');
 container.style.padding = "10px ";
 container.style.backgroundColor = 'lightgray';
@@ -124,3 +124,22 @@ middleImg.style.width = '100%';
 const footer = document.querySelector('footer');
 footer.style.borderTop = '2px solid black';
 footer.style.paddingTop = '10px';
+
+
+//code for 2nd stretch goal
+const newH1 = document.createElement('h1');
+container.prepend(newH1);
+
+newH1.textContent = 'THIS H1 TEXT IS FOR STRETCH GOAL II. IT WILL APPEAR ONLY IF YOU PRESS THE "GET STARTED" BUTTON';
+newH1.style.padding = '40px';
+newH1.style.textAlign = 'center';
+newH1.style.borderBottom = '2px solid black';
+newH1.style.display = 'none';
+
+getStartedBtn.addEventListener('click', (event) => {
+  if(newH1.style.display === 'none') {
+    newH1.style.display = 'block';
+  } else {
+    newH1.style.display = 'none';
+  }
+} );

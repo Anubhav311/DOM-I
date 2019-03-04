@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let anchorTags = document.querySelectorAll('a');
+const anchorTags = document.querySelectorAll('a');
 
 let counter = 1;
 anchorTags.forEach(currentItem => {
@@ -58,3 +58,28 @@ getStartedBtn.textContent = siteContent.cta.button;
 
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent.cta["img-src"]);
+
+//code for main-content class.
+const headingFour = document.querySelectorAll('h4');
+const paragraphTags = document.querySelectorAll('p');
+const middleImg = document.getElementById("middle-img");
+
+headingFour[0].textContent = siteContent["main-content"]["features-h4"];
+paragraphTags[0].textContent = siteContent["main-content"]["features-content"];
+
+headingFour[1].textContent = siteContent["main-content"]["about-h4"];
+paragraphTags[1].textContent = siteContent["main-content"]["about-content"];
+
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+headingFour[2].textContent = siteContent["main-content"]["services-h4"];
+paragraphTags[2].textContent = siteContent["main-content"]["services-content"];
+
+headingFour[3].textContent = siteContent["main-content"]["product-h4"];
+paragraphTags[3].textContent = siteContent["main-content"]["product-content"];
+
+headingFour[4].textContent = siteContent["main-content"]["vision-h4"];
+paragraphTags[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+console.log(paragraphTags);

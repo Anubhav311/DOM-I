@@ -142,4 +142,4 @@ getStartedBtn.addEventListener('click', (event) => {
   } else {
     newH1.style.display = 'none';
   }
-} );
+});

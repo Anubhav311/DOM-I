@@ -37,16 +37,24 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+// Code for nav
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let anchorTags = document.querySelectorAll('a');
-// function navBar() {
-  let counter = 1;
-  anchorTags.forEach(currentItem => {
-    currentItem.textContent = siteContent['nav'][`nav-item-${counter}`];
-    counter++
-  })
-// }
-// navBar();
+
+let counter = 1;
+anchorTags.forEach(currentItem => {
+  currentItem.textContent = siteContent['nav'][`nav-item-${counter}`];
+  counter++
+})
+
+//code for cta class.
+const domIsAwesom = document.querySelector('h1');
+domIsAwesom.textContent = siteContent.cta.h1;
+
+const getStartedBtn = document.querySelector('button');
+getStartedBtn.textContent = siteContent.cta.button;
+
+const ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent.cta["img-src"]);

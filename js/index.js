@@ -46,8 +46,22 @@ const anchorTags = document.querySelectorAll('a');
 let counter = 1;
 anchorTags.forEach(currentItem => {
   currentItem.textContent = siteContent['nav'][`nav-item-${counter}`];
+  currentItem.style.color = 'green';
   counter++
 })
+
+const navBar = document.querySelector('nav');
+
+const newAnchorTag1 = document.createElement('a');
+newAnchorTag1.textContent = "AppendTag";
+newAnchorTag1.style.color = "green";
+navBar.appendChild(newAnchorTag1);
+
+const newAnchorTag2 = document.createElement('a');
+newAnchorTag2.textContent = "PrependTag";
+newAnchorTag2.style.color = "green";
+navBar.prepend(newAnchorTag2);
+
 
 //code for cta class.
 const domIsAwesom = document.querySelector('h1');
@@ -91,5 +105,3 @@ paragraphTags[7].textContent = siteContent.contact.email;
 
 //code for footer.
 paragraphTags[8].textContent = siteContent.footer.copyright;
-
-console.log(paragraphTags);
